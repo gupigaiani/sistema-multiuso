@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC - ToolsHUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/imc.css">
+</head>
+<body>
+<header>
+    <div class="site-title">
+        <h1>Cálculo IMC</h1>
+    </div>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../matematica.html">Matemática</a>
+        <a href="../jogos.html">Jogos</a>
+        <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+</header>
+
+<main>
+    <section class="imc-section">
+        <label for="peso">Peso (kg):</label>
+        <input type="text" id="peso" placeholder="Ex: 70">
+        <label for="altura">Altura (m):</label>
+        <input type="text" id="altura" placeholder="Ex: 1.75">
+        <button id="calcular">Calcular IMC</button>
+        <p id="erro" class="error-message"></p>
+        <div id="resultado" class="resultado"></div>
+    </section>
+</main>
+
+<script src="../js/imc.js"></script>
+</body>
+</html>
