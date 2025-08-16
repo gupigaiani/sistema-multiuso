@@ -8,7 +8,6 @@ gerarBtn.addEventListener('click', () => {
     resultadoDiv.innerHTML = '';
     erroP.textContent = '';
 
-    // Validação
     if (valor === '' || isNaN(valor)) {
         erroP.textContent = 'Digite um número válido!';
         return;
@@ -16,7 +15,6 @@ gerarBtn.addEventListener('click', () => {
 
     const numero = parseInt(valor);
 
-    // Gerar tabuada
     let resultado = '';
     for (let i = 1; i <= 10; i++) {
         resultado += `${numero} x ${i} = ${numero * i}<br>`;

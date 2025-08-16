@@ -4,27 +4,24 @@ const alturaInput = document.getElementById('altura');
 const resultadoDiv = document.getElementById('resultado');
 const erroP = document.getElementById('erro');
 
-// Função para formatar o peso (ex: 70,5)
 pesoInput.addEventListener('input', () => {
     let valor = pesoInput.value;
-    valor = valor.replace(/[^0-9]/g, ''); // remove tudo que não é número
+    valor = valor.replace(/[^0-9]/g, ''); 
     if (valor.length > 2) {
         valor = valor.slice(0, valor.length - 1) + ',' + valor.slice(valor.length - 1);
     }
     pesoInput.value = valor;
 });
 
-// Função para formatar a altura (ex: 1,75)
 alturaInput.addEventListener('input', () => {
     let valor = alturaInput.value;
-    valor = valor.replace(/[^0-9]/g, ''); // remove tudo que não é número
+    valor = valor.replace(/[^0-9]/g, ''); 
     if (valor.length > 1) {
         valor = valor.slice(0, 1) + ',' + valor.slice(1);
     }
     alturaInput.value = valor;
 });
 
-// Cálculo do IMC
 calcularBtn.addEventListener('click', () => {
     const peso = parseFloat(pesoInput.value.replace(',', '.'));
     const altura = parseFloat(alturaInput.value.replace(',', '.'));
