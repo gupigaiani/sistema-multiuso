@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros - ToolsHUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/juros.css">
+</head>
+<body>
+<header>
+    <div class="site-title">
+        <h1>ToolsHUB</h1>
+    </div>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../matematica.html">Matemática</a>
+        <a href="../jogos.html">Jogos</a>
+        <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+</header>
+
+<main>
+    <section class="juros-section">
+        <label for="tipo">Selecione o tipo de juros:</label>
+        <select id="tipo">
+            <option value="simples">Juros Simples</option>
+            <option value="compostos">Juros Compostos</option>
+        </select>
+
+        <label for="unidade">Unidade do tempo:</label>
+        <select id="unidade">
+            <option value="meses">Mês</option>
+            <option value="anos">Ano</option>
+        </select>
+
+        <label for="tempo" id="tempo-label">Tempo:</label>
+        <input type="text" id="tempo" placeholder="Ex: 6">
+
+        <label for="capital">Capital (R$):</label>
+        <input type="text" id="capital" placeholder="Ex: 1000">
+
+        <label for="taxa" id="taxa-label">Taxa de juros (%):</label>
+        <input type="text" id="taxa" placeholder="Ex: 2">
+
+        <button id="calcular">Calcular</button>
+        <p id="erro" class="error-message"></p>
+        <div id="resultado" class="resultado"></div>
+    </section>
+
+</main>
+
+<script src="../js/juros.js"></script>
+</body>
+</html>

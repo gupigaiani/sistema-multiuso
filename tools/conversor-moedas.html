@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas - ToolsHUB</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/conversor-moedas.css">
+  <script src="../js/conversor-moedas.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>Conversor de Moedas</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../matematica.html">Matemática</a>
+      <a href="../jogos.html">Jogos</a>
+      <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+  </header>
+
+  <main class="conversor-moedas-section">
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" placeholder="Ex: 100" min="0">
+
+    <label for="de">De:</label>
+    <select id="de">
+      <option value="BRL">Real (BRL)</option>
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">Libra (GBP)</option>
+    </select>
+
+    <label for="para">Para:</label>
+    <select id="para">
+      <option value="BRL">Real (BRL)</option>
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">Libra (GBP)</option>
+    </select>
+
+    <button id="converter">Converter</button>
+
+    <p id="erro" class="error-message"></p>
+    <div id="resultado" class="resultado"></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.labirinto-controls {
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.labirinto-controls label {
+    color: #00bfff;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.labirinto-controls select,
+.labirinto-controls button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: #272727;
+    color: #fff;
+}
+
+.labirinto-controls button {
+    background-color: #00bfff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.labirinto-controls button:hover {
+    background-color: #005f9e;
+}
+
+#labirinto-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.celula {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #555;
+    box-sizing: border-box;
+}
+
+.parede {
+    background-color: #272727;
+}
+
+.caminho {
+    background-color: #00bfff;
+}
+
+.jogador {
+    background-color: #ffff00;
+}
+
+.saida {
+    background-color: #00ff00;
+}

@@ -1,0 +1,60 @@
+.velha-section {
+    background-color: #1e1e1e;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 350px;
+    text-align: center;
+}
+
+.velha-section h2 {
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.celula {
+    width: 80px;
+    height: 80px;
+    background-color: #272727;
+    color: #fff;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.celula:hover {
+    background-color: #00bfff;
+}
+
+.velha-section button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.velha-section button:hover {
+    background-color: #005f9e;
+}
+
+.velha-section .resultado {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 16px;
+}

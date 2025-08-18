@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de QR Code - ToolsHUB</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/qr-code.css">
+  <script src="../js/qr-code.js" defer></script> <!-- Só um arquivo JS -->
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>Gerador de QR Code</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../matematica.html">Matemática</a>
+      <a href="../jogos.html">Jogos</a>
+      <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+  </header>
+
+  <main class="qr-code-section">
+    <label for="texto">Digite o texto ou link:</label>
+    <input type="text" id="texto" placeholder="Ex: https://toolsHUB.com">
+    <button id="gerar">Gerar QR Code</button>
+    <p id="erro" class="error-message"></p>
+    <div id="qrcode"></div>
+  </main>
+</body>
+</html>

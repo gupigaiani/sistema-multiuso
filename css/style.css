@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -51,6 +57,7 @@ header nav a:hover {
 }
 
 main {
+    flex: 1;
     padding: 180px 20px 50px 20px;
     display: flex;
     flex-direction: column;
@@ -138,9 +145,9 @@ p {
 
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: #1f1f1f;
-    margin-top: 50px;
+    /* Remover margin-top */
 }
 
 @media (max-width: 768px) {
