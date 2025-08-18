@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura - ToolsHUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/temperatura.css">
+</head>
+<body>
+<header>
+    <div class="site-title">
+        <h1>ToolsHUB</h1>
+    </div>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../matematica.html">Matemática</a>
+        <a href="../jogos.html">Jogos</a>
+        <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+</header>
+
+<main>
+    <section class="temperatura-section">
+        <label for="valor">Digite o valor da temperatura:</label>
+        <input type="text" id="valor" placeholder="Ex: 100">
+
+        <label for="origem">Converter de:</label>
+        <select id="origem">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <label for="destino">Para:</label>
+        <select id="destino">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button id="converter">Converter</button>
+        <p id="erro" class="error-message"></p>
+        <div id="resultado" class="resultado"></div>
+    </section>
+</main>
+
+<script src="../js/temperatura.js"></script>
+</body>
+</html>

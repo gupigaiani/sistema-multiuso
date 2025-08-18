@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Palavras - ToolsHUB</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contador-palavras.css">
+  <script src="../js/contador-palavras.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>ToolsHUB</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../matematica.html">Matemática</a>
+      <a href="../jogos.html">Jogos</a>
+      <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+  </header>
+
+  <main class="contador-palavras-section">
+    <label for="texto">Digite seu texto:</label>
+    <textarea id="texto" rows="6" placeholder="Escreva aqui..."></textarea>
+
+    <label>
+      <input type="checkbox" id="ignorarEspacos"> Desativar contador de espaços
+    </label>
+
+    <button id="contar">Contar Palavras e Caracteres</button>
+    <p id="erro" class="error-message"></p>
+    <div id="resultado" class="resultado"></div>
+  </main>
+</body>
+</html>

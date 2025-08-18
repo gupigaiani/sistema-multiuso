@@ -1,31 +1,40 @@
-.fatorial-section {
+.contador-palavras-section {
     background-color: #1e1e1e;
+    margin-top: 180px; /* espaço entre o menu fixo e a seção */
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 300px;
+    width: 400px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.fatorial-section label {
+.contador-palavras-section label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
     color: #00bfff;
+    text-align: left;
 }
 
-.fatorial-section input {
-    width: 80%;
+.contador-palavras-section textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: none;
     font-size: 16px;
+    resize: vertical;
     background-color: #272727;
     color: #fff;
 }
 
-.fatorial-section button {
+.contador-palavras-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contador-palavras-section button {
     background-color: #00bfff;
     color: #fff;
     border: none;
@@ -36,17 +45,17 @@
     transition: background-color 0.3s;
 }
 
-.fatorial-section button:hover {
+.contador-palavras-section button:hover {
     background-color: #005f9e;
 }
 
-.fatorial-section .error-message {
+.contador-palavras-section .error-message {
     color: #ff4d4d;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.fatorial-section .resultado {
+.contador-palavras-section .resultado {
     margin-top: 20px;
     color: #ccc;
     text-align: center;

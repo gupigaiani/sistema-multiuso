@@ -1,21 +1,22 @@
-.fatorial-section {
+.equacao-section {
     background-color: #1e1e1e;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 300px;
+    width: 320px;
     text-align: center;
 }
 
-.fatorial-section label {
+.equacao-section label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 16px;
     color: #00bfff;
+    text-align: left;
 }
 
-.fatorial-section input {
-    width: 80%;
+.equacao-section input {
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -25,7 +26,7 @@
     color: #fff;
 }
 
-.fatorial-section button {
+.equacao-section button {
     background-color: #00bfff;
     color: #fff;
     border: none;
@@ -36,20 +37,21 @@
     transition: background-color 0.3s;
 }
 
-.fatorial-section button:hover {
+.equacao-section button:hover {
     background-color: #005f9e;
 }
 
-.fatorial-section .error-message {
+.equacao-section .error-message {
     color: #ff4d4d;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.fatorial-section .resultado {
+.equacao-section .resultado {
     margin-top: 20px;
     color: #ccc;
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
 }
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca - ToolsHUB</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/jogo-forca.css">
+  <script src="../js/jogo-forca.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <h1>ToolsHUB</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../matematica.html">Matemática</a>
+      <a href="../jogos.html">Jogos</a>
+      <a href="../utilitarios.html">Utilitários</a>
+    </nav>
+  </header>
+
+  <main class="forca-section">
+    <label for="tentativas">Número de tentativas:</label>
+    <input type="number" id="tentativas" min="1" max="15" value="6">
+
+    <button onclick="iniciarJogo()">Gerar Palavra Aleatória</button>
+
+    <div id="jogo" style="display:none;">
+      <p id="palavra">Palavra: </p>
+      <p id="tentativasRestantes"></p>
+
+      <label for="letra">Digite uma letra:</label>
+      <input type="text" id="letra" maxlength="1">
+      <button onclick="chutarLetra()">Chutar</button>
+
+      <p id="mensagem" class="erro"></p>
+    </div>
+  </main>
+</body>
+</html>

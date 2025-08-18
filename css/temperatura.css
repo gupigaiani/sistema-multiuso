@@ -1,4 +1,4 @@
-.fatorial-section {
+.temperatura-section {
     background-color: #1e1e1e;
     padding: 30px 40px;
     border-radius: 10px;
@@ -7,14 +7,15 @@
     text-align: center;
 }
 
-.fatorial-section label {
+.temperatura-section label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
     color: #00bfff;
 }
 
-.fatorial-section input {
+.temperatura-section input,
+.temperatura-section select {
     width: 80%;
     padding: 10px;
     margin-bottom: 15px;
@@ -25,7 +26,7 @@
     color: #fff;
 }
 
-.fatorial-section button {
+.temperatura-section button {
     background-color: #00bfff;
     color: #fff;
     border: none;
@@ -36,17 +37,17 @@
     transition: background-color 0.3s;
 }
 
-.fatorial-section button:hover {
+.temperatura-section button:hover {
     background-color: #005f9e;
 }
 
-.fatorial-section .error-message {
+.temperatura-section .error-message {
     color: #ff4d4d;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.fatorial-section .resultado {
+.temperatura-section .resultado {
     margin-top: 20px;
     color: #ccc;
     text-align: center;
