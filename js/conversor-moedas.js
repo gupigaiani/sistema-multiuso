@@ -5,7 +5,6 @@ const converterBtn = document.getElementById("converter");
 const resultadoDiv = document.getElementById("resultado");
 const erro = document.getElementById("erro");
 
-// Taxas fixas (atualize quando quiser)
 const taxas = {
     BRL: { USD: 0.20, EUR: 0.18, GBP: 0.16 },
     USD: { BRL: 5.0, EUR: 0.9, GBP: 0.8 },

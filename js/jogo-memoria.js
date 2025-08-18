@@ -3,7 +3,7 @@ const resultado = document.getElementById("resultado");
 const reiniciar = document.getElementById("reiniciar");
 
 let emojis = ["🍎", "🍌", "🍇", "🍉", "🍓", "🥝", "🍒", "🍑"];
-let cartas = [...emojis, ...emojis]; // duplicar para pares
+let cartas = [...emojis, ...emojis]; 
 let primeiraCarta = null;
 let segundaCarta = null;
 let bloqueio = false;
@@ -52,7 +52,6 @@ function revelarCarta(event) {
                 primeiraCarta.classList.remove("revelada");
                 segundaCarta.classList.remove("revelada");
             } else {
-                // Se acertou o par
                 primeiraCarta.classList.add("certa");
                 segundaCarta.classList.add("certa");
                 paresEncontrados++;

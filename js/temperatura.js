@@ -16,7 +16,6 @@ document.getElementById("converter").addEventListener("click", function () {
     let temp = parseFloat(valor);
     let convertido;
 
-    // Converter para Celsius primeiro
     let emCelsius;
     switch (origem) {
         case "celsius":
@@ -30,7 +29,6 @@ document.getElementById("converter").addEventListener("click", function () {
             break;
     }
 
-    // Converter de Celsius para destino
     switch (destino) {
         case "celsius":
             convertido = emCelsius;

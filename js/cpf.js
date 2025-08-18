@@ -38,12 +38,10 @@ function gerarCPF() {
         numeros.push(Math.floor(Math.random() * 10));
     }
 
-    // Primeiro dígito verificador
     let soma = numeros.reduce((acc, val, idx) => acc + val * (10 - idx), 0);
     let dv1 = soma % 11 < 2 ? 0 : 11 - (soma % 11);
     numeros.push(dv1);
 
-    // Segundo dígito verificador
     soma = numeros.reduce((acc, val, idx) => acc + val * (11 - idx), 0);
     let dv2 = soma % 11 < 2 ? 0 : 11 - (soma % 11);
     numeros.push(dv2);

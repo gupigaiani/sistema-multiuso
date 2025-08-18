@@ -7,7 +7,7 @@ const erro = document.getElementById("erro");
 
 gerarBtn.addEventListener("click", async () => {
     erro.textContent = "";
-    qrcodeDiv.innerHTML = ""; // limpa QR anterior
+    qrcodeDiv.innerHTML = ""; 
 
     const texto = textoInput.value.trim();
     if (!texto) {

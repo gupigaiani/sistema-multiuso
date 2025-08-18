@@ -34,7 +34,6 @@ calcularBtn.addEventListener("click", () => {
         return;
     }
 
-    // Ajusta o tempo para meses se a unidade for anos
     if (unidade.value === "anos") {
         tempo *= 12;
     }

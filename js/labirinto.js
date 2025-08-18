@@ -7,7 +7,6 @@ let labirinto = [];
 let tamanho = 5;
 
 function criarLabirintoDFS(n) {
-    // Inicializa grid cheia de paredes
     let grid = Array(n).fill(null).map(() => Array(n).fill(1));
 
     function shuffle(array) {
@@ -17,25 +16,25 @@ function criarLabirintoDFS(n) {
     function dfs(x, y) {
         grid[y][x] = 0;
         let direcoes = shuffle([
-            [0, -1], // cima
-            [0, 1],  // baixo
-            [-1, 0], // esquerda
-            [1, 0]   // direita
+            [0, -1], 
+            [0, 1], 
+            [-1, 0], 
+            [1, 0]  
         ]);
 
         for (let [dx, dy] of direcoes) {
             let nx = x + dx*2;
             let ny = y + dy*2;
             if (nx >= 0 && nx < n && ny >= 0 && ny < n && grid[ny][nx] === 1) {
-                grid[y + dy][x + dx] = 0; // remove parede intermediária
+                grid[y + dy][x + dx] = 0; 
                 dfs(nx, ny);
             }
         }
     }
 
-    dfs(0,0); // começa no canto superior esquerdo
-    grid[0][0] = 0; // entrada
-    grid[n-1][n-1] = 0; // saída
+    dfs(0,0); 
+    grid[0][0] = 0; 
+    grid[n-1][n-1] = 0; 
     return grid;
 }
 

@@ -14,7 +14,6 @@ function deleteLast() {
 
 function calculate() {
   try {
-    // Substituir % por /100 para cálculo
     let expression = display.value.replace(/%/g, "/100");
     display.value = eval(expression);
   } catch {

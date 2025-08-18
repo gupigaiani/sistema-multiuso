@@ -20,14 +20,248 @@
 </header>
 
 <main>
-    <section class="home-section">
-        <h2>Bem-vindo ao ToolsHUB!</h2>
-        <p>Escolha uma categoria no menu para acessar as ferramentas de Matemática, Jogos e Utilitários.</p>
+    <!--<section class="home-section">
+        <h2>Bem-vindo!</h2>
+        <p>Escolha uma categoria no menu ou digite algo no campo de pesquisa.</p>
         <div class="tips">
             <p>💡 Dica: Explore cada ferramenta para ver todas as funcionalidades disponíveis!</p>
         </div>
+    </section>-->
+    
+    <section class="search-section">
+        <input type="text" id="search" placeholder="Digite algo para pesquisar...">
     </section>
+
+    <div class="category">
+        <div class="card" onclick="window.location='tools/calculadora.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Calculadora</h3>
+                </div>
+                <div class="card-back">
+                    <p>Realize cálculos rápidos e precisos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/contador-palavras.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Contador de Palavras</h3>
+                </div>
+                <div class="card-back">
+                    <p>Conte palavras rapidamente em textos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/conversor-moedas.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Conversor de Moedas</h3>
+                </div>
+                <div class="card-back">
+                    <p>Converta valores entre diferentes moedas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/conversor-temperatura.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Conversor de Temperatura</h3>
+                </div>
+                <div class="card-back">
+                    <p>Converta Celsius, Fahrenheit e Kelvin facilmente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/cpf.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>CPF</h3>
+                </div>
+                <div class="card-back">
+                    <p>Valide ou gere CPFs aleatórios.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/cronometro.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Cronômetro</h3>
+                </div>
+                <div class="card-back">
+                    <p>Meça intervalos de tempo facilmente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/decimal-binario.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Decimal para Binário</h3>
+                </div>
+                <div class="card-back">
+                    <p>Converta números decimais em binário rapidamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/equacao-2-grau.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Equação de 2º Grau</h3>
+                </div>
+                <div class="card-back">
+                    <p>Resolva equações quadráticas usando Bhaskara.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/fatorial.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Fatorial</h3>
+                </div>
+                <div class="card-back">
+                    <p>Calcule o fatorial de qualquer número.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/fibonacci.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Sequência de Fibonacci</h3>
+                </div>
+                <div class="card-back">
+                    <p>Gere a sequência de Fibonacci rapidamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/gerador-numeros.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Gerador de Números</h3>
+                </div>
+                <div class="card-back">
+                    <p>Crie números aleatórios em poucos segundos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/gerador-senha.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Gerador de Senhas</h3>
+                </div>
+                <div class="card-back">
+                    <p>Gere senhas seguras rapidamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/imc.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Calculadora de IMC</h3>
+                </div>
+                <div class="card-back">
+                    <p>Calcule seu índice de massa corporal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/jogo-forca.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Jogo da Forca</h3>
+                </div>
+                <div class="card-back">
+                    <p>Adivinhe a palavra correta antes que acabe as tentativas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/jogo-memoria.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Jogo da Memória</h3>
+                </div>
+                <div class="card-back">
+                    <p>Encontre todos os pares de emojis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/jogo-velha.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Jogo da Velha</h3>
+                </div>
+                <div class="card-back">
+                    <p>Jogue contra outro jogador no clássico Tic Tac Toe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/juros.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Calculadora de Juros</h3>
+                </div>
+                <div class="card-back">
+                    <p>Calcule juros simples e compostos facilmente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/labirinto.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Labirinto</h3>
+                </div>
+                <div class="card-back">
+                    <p>Encontre a saída do labirinto no menor tempo possível.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/qr-code.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Gerador de QR Code</h3>
+                </div>
+                <div class="card-back">
+                    <p>Crie QR Codes instantaneamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location='tools/tabuada.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Tabuada</h3>
+                </div>
+                <div class="card-back">
+                    <p>Aprenda ou pratique a tabuada de forma rápida.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <p id="no-results" style="display:none; text-align:center; margin-top:15px; color:gray;">
+    Nenhum resultado encontrado.
+    </p>
 </main>
+<script src="js/home.js"></script>
 <footer> &copy; 2025 Gustavo Pigaiani. Todos os direitos reservados. </footer>
 </body>
 </html>

@@ -16,7 +16,7 @@ function atualizarDisplay() {
 }
 
 function iniciarCronometro() {
-    if(intervalId) return; // evita múltiplos intervalos
+    if(intervalId) return;
     intervalId = setInterval(() => {
         segundos++;
         if(segundos >= 60) { segundos = 0; minutos++; }
