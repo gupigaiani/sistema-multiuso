@@ -1,7 +1,6 @@
 const searchInput = document.getElementById("search");
 const cards = document.querySelectorAll(".card");
 
-// 🔹 ao carregar a página, esconde todos os cards
 window.addEventListener("DOMContentLoaded", () => {
     cards.forEach(card => card.style.display = "none");
 });
